@@ -1,0 +1,21 @@
+.tabs {
+    flex: 1 1 0;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.tab {
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.tab.active {
+    border-bottom: 2px solid #4057a2;
+    color: black;
+}
+
+.content {
+    position: absolute;
+    bottom: 0px;
+}

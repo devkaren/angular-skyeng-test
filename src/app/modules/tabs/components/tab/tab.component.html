@@ -1,0 +1,10 @@
+<div
+  *ngIf="{ title: tabTitle$ | async, active: active$ | async } as data"
+  [ngClass]="{'tab': true, 'active': data.active}" 
+  (click)="setActive(true)">
+  {{ data.title }}
+</div>
+
+<div *ngIf="{ content: tabContent$ | async, active: active$ | async } as data" class="content">
+  <span *ngIf="data.active" [innerHTML]="data.content"></span>
+</div>

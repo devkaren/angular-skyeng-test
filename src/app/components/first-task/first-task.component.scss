@@ -1,0 +1,28 @@
+.btn-group {
+  display: flex;
+
+  .btn {
+    text-decoration: none;
+    transition: all .3s;
+    font-weight: 400;
+    font-size: 0.8571em;
+    line-height: 1.35em;
+    margin: 10px;
+    border: none;
+    border-radius: 0.1875rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #4057a2;
+    outline: none;
+    color: #FFFFFF;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .btn.error {
+    background-color: #c30d43;
+  }
+
+  .btn.success {
+    background-color: #40a26a;
+  }
+}
